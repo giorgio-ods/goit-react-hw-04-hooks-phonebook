@@ -22,7 +22,7 @@ export default function AddContacts({ onSubmit }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit(name, phone);
+    onSubmit({ name, phone });
     clearInput();
   };
 
